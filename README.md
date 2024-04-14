@@ -1,6 +1,6 @@
-# Git clone the repository
-
-	`https://github.com/MugumoPerm/nvim.git`
+# Clone the repository
+	cd ~/.config/
+	git clone https://github.com/MugumoPerm/nvim.git
 
 # Setup Plug-in manager
 
