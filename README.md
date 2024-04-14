@@ -9,8 +9,9 @@
 
 # Install dependencies
 
-1. **Install Exuberant Ctags**:
+1. **Install Exuberant Ctags**
 	`sudo apt-get update`
+	
 	`sudo apt-get install exuberant-ctags`
 
 2. 
