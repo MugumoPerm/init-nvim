@@ -1,5 +1,5 @@
-#### Git clone the repository
+#Git clone the repository
 
-#### Setup Plug-in manager
+#Setup Plug-in manager
 
-#### Install dependencies
+#Install dependencies
