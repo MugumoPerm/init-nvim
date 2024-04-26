@@ -64,7 +64,6 @@ nnoremap <silent> <leader>t :ToggleTerm<CR>
 
 " ################# WakaTime #################
 
-" let g:wakatime_api_key = 'waka_42685fb3-39dd-4fbd-9773-defa52803be0'
 
 " Set the statusline to include WakaTime information
 set statusline+=%{WakaTimeStatusLine()}
