@@ -14,7 +14,7 @@ call plug#begin( '~/.vim/plugged' )
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'nvim-lua/plenary.nvim'
-Plug 'https://github.com/nvim-treesitter/nvim-treesitter' " Treesitter
+" Plug 'https://github.com/nvim-treesitter/nvim-treesitter' " Treesitter
 Plug 'https://github.com/nvim-telescope/telescope.nvim' " Telescope
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
@@ -30,6 +30,8 @@ Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'npm ci' }
 Plug 'ChrisBrowne/terminal-toggle.nvim' " Terminal Toggle
+" WakaTime
+Plug 'wakatime/vim-wakatime'
 
 " Plug 'https://github.com/kyazdani42/nvim-web-devicons'
 " Plug 'https://github.com/DaikyXendo/nvim-material-icon' " Material Icons
@@ -47,15 +49,23 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " ################# terminal #################
 " Set initial size of the terminal (15 lines)
-let g:toggleterm_size = 15
+" let g:toggleterm_size = 15
 
 " Open terminal in a horizontal split
-let g:toggleterm_direction = 'horizontal'
+" let g:toggleterm_direction = 'horizontal'
 
 " Key mapping to toggle the terminal
 nnoremap <silent> <leader>t :ToggleTerm<CR>
 
+" ################# WakaTime #################
 
+" let g:wakatime_api_key = 'waka_42685fb3-39dd-4fbd-9773-defa52803be0'
+
+" Set the statusline to include WakaTime information
+set statusline+=%{WakaTimeStatusLine()}
+
+
+" ################# end #################
 
 
 nnoremap <C-f> :NERDTreeFocus<CR>
@@ -106,3 +116,5 @@ nnoremap <leader>tn :tabnew<CR>
 " close tab using tc
 nnoremap <leader>tc :tabclose<CR>
 
+" ################# Telescope #################
+nnoremap <S-t> :Telescope<CR>
