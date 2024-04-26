@@ -30,6 +30,11 @@ Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'npm ci' }
 Plug 'ChrisBrowne/terminal-toggle.nvim' " Terminal Toggle
+
+" session management
+Plug 'rmagatti/auto-session'
+Plug 'rmagatti/session-lens'
+
 " WakaTime
 Plug 'wakatime/vim-wakatime'
 
