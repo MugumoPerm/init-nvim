@@ -14,3 +14,16 @@
 sudo apt-get update
 sudo apt-get install exuberant-ctags
 ``` 
+2. **Install nodejs**
+```
+sudo apt install nodejs
+```
+3. **Install npm**
+```
+sudo apt install npm
+```
+4. **build coc.nvim**
+```
+cd ~/.vim/plugged/coc.nvim
+npm ci
+```
