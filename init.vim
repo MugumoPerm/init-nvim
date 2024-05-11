@@ -31,6 +31,10 @@ Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'npm ci' }
 Plug 'ChrisBrowne/terminal-toggle.nvim' " Terminal Toggle
 
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'vim-pandoc/vim-pandoc' " Pandoc is capable of converting markdown to pdf
+
 " session management
 Plug 'rmagatti/auto-session'
 Plug 'rmagatti/session-lens'
