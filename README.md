@@ -17,6 +17,8 @@ sudo apt-get install exuberant-ctags
 2. **Install nodejs**
 ```
 sudo apt install nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install --lts
 ```
 3. **Install npm**
 ```
