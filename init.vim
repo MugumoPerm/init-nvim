@@ -6,7 +6,7 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
-
+" :set clipboard=unnamedplus
 
 
 call plug#begin( '~/.vim/plugged' )
@@ -22,6 +22,7 @@ Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/catppuccin/nvim' " Catppuccino
 Plug 'https://github.com/rose-pine/neovim' " Rose Pine
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
+Plug 'craftzdog/solarized-osaka.nvim'
 Plug 'https://github.com/folke/tokyonight.nvim' "tokyonight
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
@@ -40,7 +41,7 @@ Plug 'rmagatti/auto-session'
 Plug 'rmagatti/session-lens'
 
 " WakaTime
-Plug 'wakatime/vim-wakatime'
+" Plug 'wakatime/vim-wakatime'
 
 " Plug 'https://github.com/kyazdani42/nvim-web-devicons'
 " Plug 'https://github.com/DaikyXendo/nvim-material-icon' " Material Icons
@@ -87,7 +88,7 @@ nmap <F9> :TagbarOpen<CR>
 
 :set completeopt-=preview " For No Previews
 
-:colorscheme rose-pine-main
+:colorscheme jellybeans
 
 " Open a new terminal split
 nnoremap <leader>tsb :TerminalSplit bash<CR>
