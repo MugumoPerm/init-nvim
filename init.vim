@@ -50,11 +50,28 @@ call plug#end()
 
 autocmd User CocReady call coc#config()
 
-" ################# NERDTree #################
+" " Split the window horizontally and open a terminal
+" autocmd VimEnter * if argc() == 0 | split | terminal | endif
+" Automatically open NERDTree if no files specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in")
+    " Split the window horizontally
+    :sp
+    " Jump to the lower split
+    :wincmd j
+    " Open a terminal in the lower split
+    :term
+    " Jump back to the upper split
+    :wincmd k
+    " " Open NERDTree in the upper split
+    " :NERDTree
+endif
+" " ################# NERDTree #################
 " NerdTree
 " automatically open NERDTree if no files specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 " close vim if the only window left open is a NERDTree
 
 " ################# terminal #################
