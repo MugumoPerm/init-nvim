@@ -65,7 +65,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in")
     :wincmd k
     " " Open NERDTree in the upper split
     " :NERDTree
-endif
+" endif
 " " ################# NERDTree #################
 " NerdTree
 " automatically open NERDTree if no files specified
@@ -105,7 +105,7 @@ nmap <F9> :TagbarOpen<CR>
 
 :set completeopt-=preview " For No Previews
 
-:colorscheme jellybeans
+:colorscheme challenger_deep
 
 " Open a new terminal split
 nnoremap <leader>tsb :TerminalSplit bash<CR>
