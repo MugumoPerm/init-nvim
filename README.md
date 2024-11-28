@@ -34,3 +34,7 @@ nvim +PlugInstall +qall
 cd ~/.vim/plugged/coc.nvim
 npm ci
 ```
+7. **Launch Nvim**
+```
+nvim
+```
