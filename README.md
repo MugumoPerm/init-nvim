@@ -24,7 +24,12 @@ nvm install --lts
 ```
 sudo apt install npm
 ```
-4. **build coc.nvim**
+4. **Install Plugins**
+```
+nvim +PlugInstall +qall
+```
+
+6. **build coc.nvim**
 ```
 cd ~/.vim/plugged/coc.nvim
 npm ci
