@@ -38,6 +38,7 @@ sudo apt install npm
 ```
 4. **Install Plugins**
 ```
+export PATH=$PATH:/snap/bin
 nvim +PlugInstall +qall
 ```
 
