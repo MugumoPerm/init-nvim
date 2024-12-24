@@ -2,6 +2,7 @@
 ```shell
 sudo apt install snapd
 sudo systemctl start snapd
+sudo systemctl enable --now snapd.apparmor.service
 sudo snap install nvim --classic
 ```
 
