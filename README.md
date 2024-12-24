@@ -1,5 +1,7 @@
 # Install latest nvim using snap
 ```shell
+sudo apt install snapd
+sudo systemctl start snapd
 sudo snap install nvim --classic
 ```
 
