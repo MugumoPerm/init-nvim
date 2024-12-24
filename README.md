@@ -1,3 +1,8 @@
+# Install latest nvim using snap
+```shell
+sudo snap install nvim --classic
+```
+
 # Clone the repository
 	cd ~/.config/
 	git clone https://github.com/MugumoPerm/nvim.git
