@@ -3,7 +3,6 @@
 sudo apt install snapd
 sudo systemctl start snapd
 sudo systemctl enable --now snapd.apparmor.service
-sudo snap install curl
 sudo snap install nvim --classic
 ```
 
@@ -13,6 +12,7 @@ sudo snap install nvim --classic
 
 # Setup Plug-in manager
 
+	sudo apt install curl
 
 	`curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 
